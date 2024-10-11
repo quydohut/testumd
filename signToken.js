@@ -477,8 +477,9 @@
     
     }
     
-    
-
-    return vnpt_plugin;
+    return {
+        vnpt_plugin: vnpt_plugin,
+        pluginLicenseKey: pluginLicenseKey  // Trả về functionId để có thể gọi từ bên ngoài
+    };
 }));
 
