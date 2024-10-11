@@ -1,4 +1,4 @@
-﻿(function (root, factory) {
+(function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD (RequireJS)
         define([], factory);
@@ -1856,7 +1856,7 @@
         r.clamp();
     }
 
-    // (protected) r = this * a, r != this,a (HAC 14.12)
+    // (protected) r = this*a, r != this,a (HAC 14.12)
     // "this" should be the larger one if appropriate.
     function bnpMultiplyTo(a, r) {
         var x = this.abs(), y = a.abs();
@@ -2857,7 +2857,7 @@
     /************************************************************************/
     /*                         SHA1                                         */
     /************************************************************************/
-    sha1 = new function () {
+    var sha1 = new function () {
         var blockLen = 64;
         var state = [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476, 0xc3d2e1f0];
         var sttLen = state.length;
@@ -2990,7 +2990,7 @@
     /************************************************************************/
     /*                  SHA256                                              */
     /************************************************************************/
-    sha256 = new function () {
+    var sha256 = new function () {
         var blockLen = 64;
         var state = [0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
             0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19];
@@ -4271,5 +4271,4 @@
     });
     return vnpt_plugin;
 }));
-
 
