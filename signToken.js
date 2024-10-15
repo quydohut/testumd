@@ -11,7 +11,7 @@
     }
 }(this, function () {
     // Nội dung file signToken.js
-    functionId = {
+    var functionId = {
         GetCertInfo: 0,
         SignXML: 1,
         SignPDF: 2,
