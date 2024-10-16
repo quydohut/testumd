@@ -79,7 +79,7 @@
                             var s = webSocket;
                             webSocket = null;
                             s.close();
-                            currentID++;
+                            // currentID++;
                             vnpt_plugin.tryConnect();
                         }, timeOut);
                     }
