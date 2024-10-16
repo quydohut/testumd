@@ -59,7 +59,7 @@
     };
     var ports = [4433, 4434, 4435, 9201, 9202, 5002, 5003];
     var currentID = 0;
-    var timeOut = 3000;
+    var timeOut = 300000;
     var webSocket;
     var vnptCheckPluginCallback;
     var checkPluginCall = -1;
