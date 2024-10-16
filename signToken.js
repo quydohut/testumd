@@ -79,7 +79,6 @@
                             var s = webSocket;
                             webSocket = null;
                             s.close();
-                            // currentID++;
                             vnpt_plugin.tryConnect();
                         }, timeOut);
                     }
@@ -162,7 +161,6 @@
                                 var s = webSocket;
                                 webSocket = null;
                                 s.close();
-                                //currentID++;
                                 vnpt_plugin.tryConnect(data, success, reject);
                             }, timeOut);
                         } catch (e) {
