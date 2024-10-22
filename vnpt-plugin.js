@@ -16,9 +16,9 @@
     /* Author: TUANTA                                                       */
     /* Copyright (c) 2018 VNPT-IT                                           */
     /************************************************************************/
-
+    // js version 1.0.0.8
     var functionId = {
-        GetCertInfo             : 0,
+        GetCertInfo: 0,
         SignXML: 1,
         SignPDF                 : 2,
         SignOFFICE              : 3,
