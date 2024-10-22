@@ -221,7 +221,8 @@
                                 success(resSplit[0]);
                             }
                             else {
-                                //window[resSplit[1]](resSplit[0]);
+                                if(resSplit[1] != "" )
+                                    window[resSplit[1]](resSplit[0]);
                             }
                         },
                         // error
