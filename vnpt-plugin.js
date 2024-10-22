@@ -186,7 +186,7 @@
                             var s = webSocket;
                             webSocket = null;
                             s.close();
-                            //currentID++;
+                            currentID++;
                             vnpt_plugin.tryConnect(data, success, reject);
                         }, timeOut);
                     }
@@ -221,7 +221,7 @@
                                 success(resSplit[0]);
                             }
                             else {
-                                window[resSplit[1]](resSplit[0]);
+                                //window[resSplit[1]](resSplit[0]);
                             }
                         },
                         // error
